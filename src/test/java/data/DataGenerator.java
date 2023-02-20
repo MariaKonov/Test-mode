@@ -29,7 +29,7 @@ public class DataGenerator {
                 .spec(requestSpec)
                 .body(user)
                 .when()
-                .port("/api/system/users")
+                .post("/api/system/users")
                 .then()
                 .statusCode(200);
     }
